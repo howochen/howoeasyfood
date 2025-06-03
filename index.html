@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味食譜 - 首頁</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">美味食譜</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">首頁</a></li>
+                        <li><a href="bookmarks.html">收藏</a></li>
+                        <li><a href="search.html">搜尋</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <form action="search.html" method="get">
+                        <input type="text" placeholder="搜尋食譜..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <button type="button" class="voice-search"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>發現美味食譜</h1>
+                <p>探索各種美味料理，讓烹飪變得簡單有趣</p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2>分類選單</h2>
+                <div class="category-list">
+                    <a href="#" class="category-item" data-category="荤菜">
+                        <div class="category-icon"><i class="fas fa-drumstick-bite"></i></div>
+                        <span>荤菜</span>
+                    </a>
+                    <a href="#" class="category-item" data-category="素菜">
+                        <div class="category-icon"><i class="fas fa-carrot"></i></div>
+                        <span>素菜</span>
+                    </a>
+                    <a href="#" class="category-item" data-category="甜品">
+                        <div class="category-icon"><i class="fas fa-cookie"></i></div>
+                        <span>甜品</span>
+                    </a>
+                    <a href="#" class="category-item" data-category="汤羹">
+                        <div class="category-icon"><i class="fas fa-mug-hot"></i></div>
+                        <span>汤羹</span>
+                    </a>
+                    <a href="#" class="category-item" data-category="主食">
+                        <div class="category-icon"><i class="fas fa-bread-slice"></i></div>
+                        <span>主食</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-recipes">
+            <div class="container">
+                <h2>推薦菜單</h2>
+                <div class="recipe-grid" id="featured-recipes-container">
+                    <!-- 推薦菜單將通過JavaScript動態加載 -->
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-recipes">
+            <div class="container">
+                <h2>熱門食譜</h2>
+                <div class="recipe-grid" id="popular-recipes-container">
+                    <!-- 熱門食譜將通過JavaScript動態加載 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>美味食譜</h3>
+                    <p>讓烹飪變得簡單有趣</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="bookmarks.html">收藏</a></li>
+                        <li><a href="search.html">搜尋</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h4>食譜分類</h4>
+                    <ul>
+                        <li><a href="#" data-category="荤菜">荤菜</a></li>
+                        <li><a href="#" data-category="素菜">素菜</a></li>
+                        <li><a href="#" data-category="甜品">甜品</a></li>
+                        <li><a href="#" data-category="汤羹">汤羹</a></li>
+                        <li><a href="#" data-category="主食">主食</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 美味食譜. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的收藏 - 美味食譜</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">美味食譜</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="bookmarks.html" class="active">收藏</a></li>
+                        <li><a href="search.html">搜尋</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <form action="search.html" method="get">
+                        <input type="text" placeholder="搜尋食譜..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <button type="button" class="voice-search"><i class="fas fa-microphone"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bookmarks">
+            <div class="container">
+                <div class="bookmarks-header">
+                    <h1>我的收藏</h1>
+                </div>
+
+                <div class="offline-notice">
+                    <i class="fas fa-wifi"></i>
+                    <p>離線模式已啟用，您可以在沒有網絡連接的情況下查看已收藏的食譜。</p>
+                </div>
+
+                <div class="bookmarks-search">
+                    <form id="bookmark-search-form">
+                        <input type="text" placeholder="搜尋我的收藏..." id="bookmark-search-input">
+                        <button type="submit">搜尋</button>
+                    </form>
+                </div>
+
+                <div class="recipe-grid" id="bookmarks-container">
+                    <!-- 收藏的食譜將通過JavaScript動態加載 -->
+                </div>
+
+                <div class="bookmarks-empty" id="empty-bookmarks" style="display: none;">
+                    <i class="fas fa-bookmark"></i>
+                    <h2>暫無收藏</h2>
+                    <p>您還沒有收藏任何食譜。瀏覽食譜並點擊收藏按鈕來添加到此處。</p>
+                    <a href="index.html">瀏覽食譜</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>美味食譜</h3>
+                    <p>讓烹飪變得簡單有趣</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="bookmarks.html">收藏</a></li>
+                        <li><a href="search.html">搜尋</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h4>食譜分類</h4>
+                    <ul>
+                        <li><a href="#" data-category="荤菜">荤菜</a></li>
+                        <li><a href="#" data-category="素菜">素菜</a></li>
+                        <li><a href="#" data-category="甜品">甜品</a></li>
+                        <li><a href="#" data-category="汤羹">汤羹</a></li>
+                        <li><a href="#" data-category="主食">主食</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 美味食譜. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/bookmarks.js"></script>
+</body>
+</html>
