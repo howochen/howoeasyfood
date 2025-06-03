@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>做菜模式 - 美味食譜</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="cooking-mode">
+    <header class="cooking-mode-header">
+        <div class="container">
+            <div class="cooking-mode-title">
+                <span id="recipe-title">加载中...</span>
+            </div>
+            <div class="cooking-mode-controls">
+                <button id="toggle-auto-play">
+                    <i class="fas fa-play"></i> 自動播放
+                </button>
+                <button id="exit-cooking-mode">
+                    <i class="fas fa-times"></i> 退出
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="cooking-mode-content">
+        <div class="container">
+            <div class="cooking-step" id="current-step">
+                <div class="step-number">步驟 <span id="step-number">1</span>/<span id="total-steps">10</span></div>
+                <div class="step-instruction" id="step-instruction">加载中...</div>
+                <div class="step-detail" id="step-detail">加载中...</div>
+                <div class="step-navigation">
+                    <button id="prev-step"><i class="fas fa-arrow-left"></i> 上一步</button>
+                    <button id="read-step"><i class="fas fa-volume-up"></i> 朗讀</button>
+                    <button id="next-step">下一步 <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/cooking-mode.js"></script>
+</body>
+</html>

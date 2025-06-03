@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <defs>
+    <linearGradient id="plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tomato" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="egg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE4B5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="200" fill="#f8f8f8"/>
+  
+  <!-- 盘子 -->
+  <ellipse cx="150" cy="120" rx="120" ry="60" fill="url(#plate)" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- 西红柿1 -->
+  <path d="M100,90 C110,80 125,85 130,95 C135,105 130,115 120,120 C110,125 95,115 90,105 C85,95 90,85 100,90Z" fill="url(#tomato)" stroke="#DC143C" stroke-width="1"/>
+  
+  <!-- 西红柿2 -->
+  <path d="M140,100 C150,90 165,95 170,105 C175,115 170,125 160,130 C150,135 135,125 130,115 C125,105 130,95 140,100Z" fill="url(#tomato)" stroke="#DC143C" stroke-width="1"/>
+  
+  <!-- 西红柿3 -->
+  <path d="M180,95 C190,85 205,90 210,100 C215,110 210,120 200,125 C190,130 175,120 170,110 C165,100 170,90 180,95Z" fill="url(#tomato)" stroke="#DC143C" stroke-width="1"/>
+  
+  <!-- 鸡蛋1 -->
+  <path d="M110,110 C120,105 130,110 135,120 C140,130 135,140 125,145 C115,150 105,145 100,135 C95,125 100,115 110,110Z" fill="url(#egg)" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- 鸡蛋2 -->
+  <path d="M150,115 C160,110 170,115 175,125 C180,135 175,145 165,150 C155,155 145,150 140,140 C135,130 140,120 150,115Z" fill="url(#egg)" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- 鸡蛋3 -->
+  <path d="M190,105 C200,100 210,105 215,115 C220,125 215,135 205,140 C195,145 185,140 180,130 C175,120 180,110 190,105Z" fill="url(#egg)" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- 装饰 - 葱花 -->
+  <path d="M90,100 L95,90 M92,95 L88,85 M130,80 L135,70 M132,75 L128,65 M170,90 L175,80 M172,85 L168,75" stroke="#3CB371" stroke-width="1"/>
+  
+  <!-- 装饰 - 西红柿汁 -->
+  <path d="M120,100 C130,95 140,100 130,105 C120,110 110,105 120,100Z" fill="#FF6347" opacity="0.3"/>
+  <path d="M160,110 C170,105 180,110 170,115 C160,120 150,115 160,110Z" fill="#FF6347" opacity="0.3"/>
+  
+  <!-- 标题 -->
+  <text x="150" y="30" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">西红柿炒鸡蛋</text>
+</svg>
